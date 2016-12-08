@@ -77,9 +77,9 @@
 	trustExitCode = true
 [merge]
         #tool = meld
-	tool = pycharm
-[mergetool "pycharm"]
-	cmd = charm merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
+	tool = webstorm
+[mergetool "webstorm"]
+	cmd = webstorm merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
 	#trustExitCode = true
 [user]
 	name = Zane Mattingly
